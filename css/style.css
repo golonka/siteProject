@@ -91,7 +91,7 @@ a, a:focus{
     flex-direction: column;
     background: #e8676b; 
    height:100%;   
-    width:60vw;
+    width:50vw;
     position: absolute;
     z-index:2;
 }
@@ -179,12 +179,16 @@ position: relative;
     background: #fff;
     width:90%;
     box-shadow: 0px 1px 12px -4px #000000;
-   
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
 }
 
 .profile__card--img {
     padding:2rem 1rem;
     max-width: 100%;
+    
 }
 
 .profile__preword {
@@ -289,17 +293,24 @@ font-weight: 100;
    
 }
 
+.profile__footer {
+    min-width: 100%;
+}
+
 .profile__footer__list{
-    list-style:none;   
-     display:flex;
+ display:flex;
     justify-content: space-around;
+        list-style:none;   
     margin:0;
     padding:2rem 1rem;
     background: #e8676b;
     color:#fff;
+      min-width:100%;
+    
 }
 
 .profile__footer__list__item {
-    justify-items:center;
+   
+
    
 }
