@@ -29,6 +29,7 @@ a {
     padding:0;
     margin:0;
     text-decoration: none;
+    color:inherit;
 }
 .container {
   
@@ -152,6 +153,7 @@ a {
 
 .menu__list {
     list-style:none;
+    
 }
 
 .menu__list__item{
