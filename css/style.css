@@ -91,7 +91,7 @@ a, a:focus{
     flex-direction: column;
     background: #e8676b; 
    height:100%;   
-    width:80vw;
+    width:60vw;
     position: absolute;
     z-index:2;
 }
