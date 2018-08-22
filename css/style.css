@@ -137,7 +137,7 @@ a {
     
     animation-name: menu__slide--opened ;
     animation-duration:0.5s; 
-    position: absolute;
+    position: fixed;
     right:0;
     
 }
@@ -270,4 +270,35 @@ font-weight: 100;
     color:#292929;
     text-transform: uppercase;
 
+}
+
+.profile__list__item__featured {
+   
+    display:block;
+    
+}
+
+.profile__list__item__featured--title {
+    background:#e8676b;
+    padding: 5px 8px;
+    line-height: 2;
+    border-radius:3px;
+    color:#fff;
+    font-weight: 700;
+   
+}
+
+.profile__footer__list{
+    list-style:none;   
+     display:flex;
+    justify-content: space-around;
+    margin:0;
+    padding:2rem 1rem;
+    background: #e8676b;
+    color:#fff;
+}
+
+.profile__footer__list__item {
+    justify-items:center;
+   
 }
