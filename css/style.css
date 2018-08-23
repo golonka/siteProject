@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=M+PLUS+1p:300,400');
 @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
 @import url('https://fonts.googleapis.com/css?family=Inconsolata');
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:100,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @keyframes menu__slide--opened {
     0%   {right:-80%; }
     100% {right:0%; }
@@ -18,23 +19,33 @@
 }
 
 
-body {
+body {  
+    background:#efefef;
     margin: 0;
     font-size:1rem;
-    font-family:arial, 'M PLUS 1p', sans-serif;
+    font-family: 'Open Sans', 'Noto Sans', 'arial', 'M PLUS 1p', 'sans-serif';
     box-sizing: border-box; 
 }
 
 a, a:focus{
-    padding:0;
-    margin:0;
+    
     text-decoration: none;
     color:inherit;
 }
-.container {
-  
 
-  
+section {
+    margin:0 1rem;
+
+}
+.fab {
+    width:1rem;
+    margin:0 auto;
+    padding:0 auto;
+    text-align: center;
+ }
+ 
+.container {
+    
 }
 
 /* header */
@@ -62,7 +73,7 @@ a, a:focus{
      content: '';
     top: 0;
     left: 0;
-    height:50vh;
+    height:70vh;
     width:100%;
    
     background-color: rgba(44, 51, 64, 0.8);
@@ -170,19 +181,25 @@ a, a:focus{
 /* section profile */
 .profile{
 display:flex;
+align-content: center;
 justify-content: center;
-top:100px;
-position: relative;
+flex-direction: column;
 }
 
+.profile--border {
+
+    box-shadow: 0px 1px 12px -4px #000000;
+}
 .profile__card {
     background: #fff;
-    width:90%;
-    box-shadow: 0px 1px 12px -4px #000000;
+   position:relative;
    display:flex;
+   align-content:center;
    justify-content: center;
    flex-direction: column;
    align-items: center;
+   margin:0;
+   margin-top:100px;
 }
 
 .profile__card--img {
@@ -299,18 +316,63 @@ font-weight: 100;
 
 .profile__footer__list{
  display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
         list-style:none;   
     margin:0;
     padding:2rem 1rem;
     background: #e8676b;
     color:#fff;
       min-width:100%;
+      
     
 }
 
 .profile__footer__list__item {
+   margin:0;
    
+}
 
+
+.profile__footer__listem__item__link {    
+    background:#e8676b;
+    margin:0;
+    padding:0.8rem;
+    border-radius:100%;
+
+}
+.profile__footer__listem__item__link:hover {
+background:grey;    
+padding:0.8rem;
+
+}
+
+.profile__button {
+   margin:2rem 0;
+   padding:0;
+   display:flex;
+   width:auto; 
+  justify-content: center;
+  text-align:center;
+    
+}
+
+.profile__button__text {
+    border:1px solid #c9c9c9;
+    padding:1.2rem 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:0.9rem;
+    color: #494949;
+}
+
+.profile__about {
+    font-weight: 100;
+    font-size:1.25rem;
+    text-align:center;
+   line-height:2.2rem;
+   color: #111;
+   margin:0 auto;
+  
+   
    
 }
