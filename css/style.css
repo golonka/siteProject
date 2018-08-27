@@ -343,7 +343,7 @@ font-weight: 100;
 .profile__footer__listem__item__link {    
     background:#e8676b;
     margin:0;
-    padding:1rem;
+    padding:0.8rem;
     border-radius:100%;
 
 }
@@ -461,14 +461,18 @@ background:grey;
     width:97%;
 }
 
-.porfolio__gallery__box{
+
+.portfolio__gallery {
+    padding:0.5rem;
+}
+.portfolio__gallery__box{
     padding:0;
     margin:0;
     max-width:100%;
     
 }
 
-.potfolio__gallery__box__image {
+.portfolio__gallery__box__image {
    
     min-width:260px;
     max-width:100%;
@@ -478,23 +482,74 @@ background:grey;
 
 
 
-.potfolio__gallery__box--image1 {
-    background:url("https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/photo-1422480041422-130238c67fe2-1-2-2-1-1-607x576.jpg");
+.portfolio__gallery__box--image1 {
+    background:url("https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/photo-1422480041422-130238c67fe2-1-2-2-1-1-607x576.jpg");  
 }
 
-.potfolio__gallery__box--image2 {
+.portfolio__gallery__box--image2 {
     background:url("https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/kaboompics-1-2-1-1-294x278.jpg");
 }
 
-.potfolio__gallery__box--image3 {
+.portfolio__gallery__box--image3 {
     background:url("https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/photo-1421757295538-9c80958e75b0-2-2-1-1-294x278.jpg");
 }
 
-.potfolio__gallery__box {
-  
-  width:100%;
+.portfolio__gallery__box {
+
+    width:100%;
     min-height:300px;
     background-repeat: no-repeat;
     background-size: cover;
     margin:1rem 0;
+    position:relative;
+}
+
+.portfolio__gallery__box:before{
+  content:'';
+  background-color:rgba(0,0,0,0.3);
+  height:100%;
+  width:100%;
+  bottom:0;
+  left:0;
+  position:absolute;
+  z-index:1;
+}
+
+
+.portfolio__gallery__box__text{
+  position: absolute;
+    display:flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    width:100%;
+    height:100%;
+    z-index:2;
+    padding: 1.2rem; 
+     opacity:1;
+
+}
+
+
+.portfolio__gallery__box__text__tittle {
+font-size:2rem;
+margin-left:2rem;
+font-style:italic;
+opacity:0.8;
+font-weight:900;
+}
+.portfolio__gallery__box__text__subtittle {
+    color:#fff;
+    text-transform: uppercase;
+    font-size:1.4rem;
+    font-weight:600;
+    max-width:60%;
+    padding:0;
+    margin:0;
+}
+
+.portfolio__gallery__box__text__tag{
+    color:#8d8d8c;
+    text-transform:uppercase;
+    font-size:0.8rem;
+    font-weight:700;
 }
