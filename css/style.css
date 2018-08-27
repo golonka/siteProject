@@ -33,15 +33,21 @@ a, a:focus{
     color:inherit;
 }
 
+h2 {    
+    margin: 2.2rem 0;
+    font-size: 1.85rem;
+    color: rgb(68, 67, 71);
+    font-weight: 600;
+    text-align:center;
+}
+
 section {
     margin:0 1rem;
 
 }
-.fab {
-    min-width:1rem;
-    min-height: 1rem;
-    margin:0 auto;
-    padding:0 auto;
+.` {
+    height:1rem;
+    width:1rem;
     text-align: center;
  }
  
@@ -337,13 +343,13 @@ font-weight: 100;
 .profile__footer__listem__item__link {    
     background:#e8676b;
     margin:0;
-    padding:0.8rem;
+    padding:1rem;
     border-radius:100%;
 
 }
 .profile__footer__listem__item__link:hover {
 background:grey;    
-padding:0.8rem;
+
 
 }
 
@@ -394,4 +400,101 @@ padding:0.8rem;
     color:#e8676b;
     padding:1.4rem;
     display:inline-flex;
+}
+
+.skills{
+  
+    position:relative;
+    align-content:center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .skills__bars {
+      background-color:#fff;
+      padding:1rem 0;
+      box-shadow: 0px 1px 12px -4px #000000;
+
+    }
+
+.bar {
+    
+ padding:1rem;
+
+}
+
+.bar__title {
+    
+    font-size:0.9rem;
+   padding:0.2rem;
+   margin:0;
+  
+}
+
+.bar__line {
+    background: #fae1e1;
+}
+
+.bar__line__fill {
+    background: #e8676b;
+ display:block;
+ height:5px;
+}
+
+.bar__line--one {
+    width:80%;
+}
+.bar__line--two {
+    width:89%;
+}
+.bar__line--three{
+    width:50%;
+}
+.bar__line--four{
+    width:99%;
+}
+.bar__line--five{
+    width:61%;
+}
+.bar__line--six{
+    width:97%;
+}
+
+.porfolio__gallery__box{
+    padding:0;
+    margin:0;
+    max-width:100%;
+    
+}
+
+.potfolio__gallery__box__image {
+   
+    min-width:260px;
+    max-width:100%;
+    border:0;
+    margin:0;
+}
+
+
+
+.potfolio__gallery__box--image1 {
+    background:url("https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/photo-1422480041422-130238c67fe2-1-2-2-1-1-607x576.jpg");
+}
+
+.potfolio__gallery__box--image2 {
+    background:url("https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/kaboompics-1-2-1-1-294x278.jpg");
+}
+
+.potfolio__gallery__box--image3 {
+    background:url("https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/12/photo-1421757295538-9c80958e75b0-2-2-1-1-294x278.jpg");
+}
+
+.potfolio__gallery__box {
+  
+  width:100%;
+    min-height:300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:1rem 0;
 }
