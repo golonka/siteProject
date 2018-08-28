@@ -530,7 +530,7 @@ background:grey;
 }
 
 
-.portfolio__gallery__box__text__tittle {
+.portfolio__gallery--title {
 font-size:2rem;
 margin-left:2rem;
 font-style:italic;
@@ -571,7 +571,7 @@ font-weight:900;
 
   }
 
- .fill {
+.porfolio__gallery__cupboard--fill {
     
     display:flex;
    position: absolute;
@@ -592,21 +592,20 @@ font-weight:900;
 
   }
 
-  .portfolio__gallery__box--image1:hover .portfolio__gallery__box__text{
+  .portfolio__gallery__box--image:hover .portfolio__gallery__box__text{
     transform: translateY(-50px);
-   
-
  
   } 
 
  
 
-  .porfolio__gallery__cupboard:hover .fill {
+  .porfolio__gallery__cupboard:hover .porfolio__gallery__cupboard--fill{
     width:100%;
        opacity:1;
         display:flex;
       justify-content: center;
       transform: translateY(-20px);
+      
 
       }
  
@@ -617,4 +616,9 @@ font-weight:900;
     padding:0.6rem;
     margin:0.4rem;
     border-radius:0.1rem;
+}
+
+.portfolio__buttons--button:hover{
+    background:#fff;
+    opacity:0.5;
 }
