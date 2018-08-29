@@ -3,18 +3,13 @@ var buttonMenu = document.querySelector('.menu__toggle--displayMenu');
 let menu =  document.querySelector('.menu');
 
 buttonMenu.addEventListener("click", function(){
-    menu.classList.toggle('menu__toggle--opened');
-    buttonMenu.classList.add('menu__toggle--hidden');
-  
+menu.classList.add('menu--active');
 },false)
 
 buttonX.addEventListener("click", function(){
-    menu.classList.toggle('menu__toggle--opened');
+  
+   menu.classList.remove('menu--active');
     buttonMenu.classList.remove('menu__toggle--hidden');
-   
-    
-    //menu.animate.add('menu__slide--closed');
-    
 },false)
 
 
