@@ -1,0 +1,34 @@
+
+.siema--img {
+  display:flex;
+  align-items: center;
+  padding:1rem;
+  max-width: 100%;
+  filter:grayscale(100%);
+
+}
+
+.siema__buttons {
+  display:flex;
+  justify-content: center;
+  padding:0;
+  margin:0;
+ 
+}
+.prev, .next {
+  border-radius:1rem;
+  background:rgba(129, 139, 133, 0.5);
+  color:#fff;
+  font-size:0.7rem;
+  margin:0.2rem;
+  padding:0.35rem 0.7rem;
+  border:none;
+  cursor:pointer;
+}
+
+.prev:focus, .next:focus{
+  -moz-outline: none;
+  outline: none; /* CSS 3 */
+  
+}
+
